@@ -14,13 +14,10 @@ body {
     color: #1a202c;
     background-color: #f7fafc;
 }
-
-/* Utility */
 .text-purple {
     color: #4b31ce;
 }
 
-/* Layout Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
