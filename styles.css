@@ -8,6 +8,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100vw;
+    min-width: 100vw;
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
@@ -19,13 +25,12 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
     width: 100%;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 /* =========================
@@ -33,7 +38,7 @@ body {
    ========================= */
 .navbar {
     background-color: #fff;
-    padding: 1rem 0;
+    padding: 16px 0;
 }
 
 .navbar-left {
@@ -48,7 +53,7 @@ body {
 
 .navbar-left h1 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 700;
     color: #252525;
     letter-spacing: 1px;
@@ -63,8 +68,8 @@ body {
 .nav-links a {
     text-decoration: none;
     color: #4a5568;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    padding: 8px 16px;
+    font-size: 16px;
     transition: color 0.2s;
 }
 
@@ -74,7 +79,7 @@ body {
 
 .nav-links .btn {
     border-radius: 999px;
-    padding: 0.5rem 1.5rem;
+    padding: 8px 24px;
     text-decoration: none;
     font-weight: bold;
     border: none;
@@ -90,7 +95,7 @@ body {
 }
 
 .nav-links .btn.signup {
-    margin-left: 0.5rem;
+    margin-left: 8px;
 }
 
 .nav-links .btn:hover {
@@ -103,7 +108,7 @@ body {
    ========================= */
 .hero {
     background-color: #fff;
-    padding: 2.5rem 0;
+    padding: 40px 0;
     width: 100%;
 }
 
@@ -111,7 +116,7 @@ body {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 48px;
     text-align: left;
 }
 
@@ -124,23 +129,23 @@ body {
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
+    font-size: 48px;
+    margin-bottom: 24px;
     font-weight: 900;
     color: #2d3748;
     line-height: 1.1;
 }
 
 .hero p {
-    font-size: 1.5rem;
-    margin-bottom: 2.5rem;
+    font-size: 24px;
+    margin-bottom: 40px;
     color: #4a5568;
 }
 
 .hero-form {
     display: flex;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 32px;
     max-width: 500px;
     width: 100%;
     position: relative;
@@ -148,10 +153,10 @@ body {
 
 .hero-form input[type="email"] {
     flex: 1;
-    padding: 1.1rem 1.5rem;
+    padding: 18px 24px;
     border: 1px solid #cbd5e1;
     border-radius: 999px;
-    font-size: 1.25rem;
+    font-size: 20px;
     outline: none;
     transition: border-color 0.2s;
     background: #fff;
@@ -169,12 +174,12 @@ body {
     bottom: 8px;
     height: auto;
     border-radius: 999px;
-    padding: 0 2rem;
+    padding: 0 32px;
     background-color: #4b31ce;
     color: #fff;
     border: none;
     font-weight: bold;
-    font-size: 1.15rem;
+    font-size: 18px;
     cursor: pointer;
     transition: background 0.2s;
     display: flex;
@@ -214,21 +219,21 @@ body {
    Trusted Customers
    ========================= */
 .trusted-customers {
-    margin-top: 2.5rem;
+    margin-top: 40px;
     text-align: left;
 }
 
 .trusted-title {
     color: #a0aec0;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
+    font-size: 18px;
+    margin-bottom: 16px;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
 .trusted-logos {
     display: flex;
-    gap: 2rem;
+    gap: 32px;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -249,7 +254,7 @@ body {
    Features Section
    ========================= */
 .features {
-    padding: 4rem 0;
+    padding: 64px 0;
     background-color: #fff;
     width: 100%;
 }
@@ -263,7 +268,7 @@ body {
 
 .features-header {
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 40px;
 }
 
 .features-label {
@@ -271,8 +276,8 @@ body {
     color: #4b31ce;
     font-weight: bold;
     letter-spacing: 2px;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
+    font-size: 16px;
+    margin-bottom: 8px;
     text-transform: uppercase;
 }
 
@@ -289,7 +294,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
-    gap: 2rem;
+    gap: 32px;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
@@ -297,12 +302,12 @@ body {
 
 .feature-item {
     background-color: #f7fafc;
-    padding: 1.5rem 2rem;
+    padding: 24px 32px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 24px;
     min-height: 100px;
 }
 
@@ -324,15 +329,15 @@ body {
 }
 
 .feature-item h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.2rem;
+    margin: 0 0 8px 0;
+    font-size: 19px;
     font-weight: 700;
     color: #4b31ce;
     text-align: left;
 }
 
 .feature-item p {
-    font-size: 1rem;
+    font-size: 16px;
     color: #4a5568;
     font-weight: 600;
     text-align: left;
@@ -347,21 +352,21 @@ body {
     color: #4b31ce;
     font-weight: bold;
     letter-spacing: 2px;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
+    font-size: 16px;
+    margin-bottom: 8px;
     text-transform: uppercase;
 }
 
 .quality {
     background: #fff;
-    padding: 4rem 0;
+    padding: 64px 0;
     width: 100%;
 }
 .quality-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 48px;
 }
 .quality-content {
     flex: 1;
@@ -371,14 +376,14 @@ body {
     justify-content: center;
 }
 .quality h2 {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: 900;
     color: #2d3748;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
     line-height: 1.2;
 }
 .quality p {
-    font-size: 1.25rem;
+    font-size: 20px;
     color: #4a5568;
     margin-bottom: 0;
 }
@@ -420,14 +425,14 @@ body {
     display: block;
 }
 .btn.learn-more {
-    margin-top: 1.2rem;
+    margin-top: 19px;
     background: #4b31ce;
     color: #fff;
     border: 2px solid #4b31ce;
     font-weight: bold;
     border-radius: 999px;
-    padding: 0.5rem 1.2rem;
-    font-size: 1rem;
+    padding: 8px 19px;
+    font-size: 16px;
     cursor: pointer;
     transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
     box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
@@ -448,14 +453,14 @@ body {
    ========================= */
 .steps {
     background: #f7fafc;
-    padding: 4rem 0;
+    padding: 64px 0;
     width: 100%;
 }
 .steps-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 48px;
 }
 .steps-content {
     flex: 1;
@@ -465,16 +470,16 @@ body {
     justify-content: center;
 }
 .steps h2 {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: 900;
     color: #2d3748;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
     line-height: 1.2;
 }
 .steps p {
-    font-size: 1.25rem;
+    font-size: 20px;
     color: #4a5568;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 .steps-list {
     list-style: none;
@@ -485,13 +490,13 @@ body {
 .steps-list li {
     display: flex;
     align-items: flex-start;
-    font-size: 1.3rem;
+    font-size: 21px;
     font-weight: 700;
     color: #222;
-    margin-bottom: 1.8rem;
+    margin-bottom: 29px;
     flex-direction: column;
     position: relative;
-    padding-left: 3.5rem;
+    padding-left: 56px;
 }
 .steps-list li::before {
     content: "0" counter(step);
@@ -502,19 +507,19 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 900;
     color: #cbd5e1;
     background: none;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-right: 1rem;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
 }
 .step-desc {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     color: #6b7280;
-    margin-top: 0.3rem;
+    margin-top: 5px;
     margin-left: 0;
     line-height: 1.5;
 }
@@ -524,14 +529,14 @@ body {
    ========================= */
 .values {
     background: #fff;
-    padding: 4rem 0;
+    padding: 64px 0;
     width: 100%;
 }
 .values-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 48px;
 }
 .values-content {
     flex: 1;
@@ -541,21 +546,21 @@ body {
     justify-content: center;
 }
 .values h2 {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: 900;
     color: #2d3748;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
     line-height: 1.2;
 }
 .values p {
-    font-size: 1.25rem;
+    font-size: 20px;
     color: #4a5568;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 .values-lists {
     display: flex;
-    gap: 2.5rem;
-    margin-top: 2rem;
+    gap: 40px;
+    margin-top: 32px;
     flex-wrap: wrap;
 }
 .values-list {
@@ -564,15 +569,15 @@ body {
     margin: 0;
     color: #2d3748;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 18px;
     min-width: 220px;
     flex: 1 1 220px;
 }
 .values-list li {
     display: flex;
     align-items: flex-start;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    gap: 16px;
+    margin-bottom: 32px;
 }
 .value-icon,
 .value-icon-2 {
@@ -611,10 +616,10 @@ body {
     display: block;
 }
 .value-desc {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     color: #6b7280;
-    margin-top: 0.2rem;
+    margin-top: 3px;
     line-height: 1.5;
 }
 .values-image img {
@@ -637,14 +642,14 @@ body {
    ========================= */
 .pricing {
     background: #f7fafc;
-    padding: 4rem 0;
+    padding: 64px 0;
     width: 100%;
 }
 .pricing-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 48px;
 }
 .pricing-content {
     flex: 1;
@@ -656,35 +661,37 @@ body {
     text-align: center;
 }
 .pricing h2 {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: 900;
     color: #2d3748;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
     line-height: 1.2;
 }
 .pricing p {
-    font-size: 1.25rem;
+    font-size: 20px;
     color: #4a5568;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
 }
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 32px;
     width: 100%;
-    margin: 2rem 0 0 0;
+    margin: 32px 0 0 0;
 }
 .pricing-card {
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    padding: 40px 24px 32px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-top: 6px solid #e2e8f0;
     transition: box-shadow 0.2s;
     position: relative;
+    height: 100%;
+    min-height: 420px;
 }
 .pricing-individual {
     border-top: 6px solid;
@@ -711,58 +718,56 @@ body {
     text-align: center;
     border-bottom: 1px solid #e5e7eb;
     border-top: none;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
     background: none;
 }
 .pricing-card ul {
     border-bottom: none;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
     padding-bottom: 0;
 }
 .pricing-card .btn.buy-btn {
-    border-top: 1px solid #e5e7eb;
-    border-bottom: none;
+    margin-top: auto;
     width: 100%;
-    margin-top: 1rem;
-    padding-top: 1.2rem;
-    background-clip: padding-box;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 19px;
 }
 .pricing-card-header {
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: 700;
-    margin-bottom: 1.2rem;
+    margin-bottom: 19px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 .price-row {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 1.2rem;
+    margin-bottom: 19px;
 }
 .price {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: 900;
     color: inherit;
-    margin-right: 0.2rem;
+    margin-right: 3px;
 }
 .per-month {
-    font-size: 1.1rem;
+    font-size: 18px;
     color: #4a5568;
     font-weight: 400;
 }
 .pricing-card ul {
     list-style: none;
     padding: 0;
-    margin: 1.5rem 0 2rem 0;
+    margin: 24px 0 32px 0;
     text-align: left;
     width: 100%;
 }
 .pricing-card ul li {
-    margin-bottom: 0.7rem;
+    margin-bottom: 11px;
     color: #4a5568;
-    font-size: 1rem;
-    padding-left: 1.2rem;
+    font-size: 16px;
+    padding-left: 19px;
     position: relative;
 }
 .pricing-card ul li:before {
@@ -770,7 +775,7 @@ body {
     color: #b5b5b5;
     position: absolute;
     left: 0;
-    font-size: 1.2em;
+    font-size: 19px;
     top: 0;
 }
 
@@ -782,8 +787,8 @@ body {
     background: none;
     border-bottom: 1px solid #e5e7eb;
     border-top: none;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -791,10 +796,10 @@ body {
 .pricing-business ul li {
     color: #fff;
     border-bottom: 1px solid rgba(255,255,255,0.08);
-    padding: 0.7rem 0;
-    font-size: 1rem;
+    padding: 11px 0;
+    font-size: 16px;
     position: relative;
-    padding-left: 1.2rem;
+    padding-left: 19px;
 }
 .pricing-business ul li:last-child {
     border-bottom: none;
@@ -807,7 +812,7 @@ body {
     color: #4b31ce;
     border: 2px solid #fff;
     font-weight: bold;
-    margin-top: 0.5rem;
+    margin-top: 8px;
     transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 .pricing-business .btn.buy-btn.blue:hover {
@@ -820,8 +825,8 @@ body {
 .btn.buy-btn {
     border-radius: 999px;
     font-weight: bold;
-    padding: 0.6rem 2.2rem;
-    font-size: 1.1rem;
+    padding: 10px 35px;
+    font-size: 18px;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -852,14 +857,14 @@ body {
    ========================= */
 .testimonials {
     background: #fff;
-    padding: 4rem 0;
+    padding: 64px 0;
     width: 100%;
 }
 .testimonials-flex {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 48px;
 }
 .testimonials-content {
     flex: 1 1 55%;
@@ -880,16 +885,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 1.5rem;
+    gap: 24px;
     position: relative;
-    margin-top: 2rem;
+    margin-top: 32px;
 }
 .testimonial {
     background: none;
     border-radius: 0;
     box-shadow: none;
-    padding: 2rem 0 1.5rem 0;
-    font-size: 1.15rem;
+    padding: 32px 0 24px 0;
+    font-size: 18px;
     color: #2d3748;
     font-style: italic;
     display: none;
@@ -899,7 +904,7 @@ body {
     max-width: 500px;
     width: 100%;
     transition: opacity 0.3s;
-    margin: 0 1rem;
+    margin: 0 16px;
     border: none;
 }
 
@@ -909,16 +914,16 @@ body {
 
 .testimonial-stars {
     color: #fbbf24;
-    font-size: 1.5rem;
-    margin-bottom: 0.7rem;
+    font-size: 24px;
+    margin-bottom: 11px;
     letter-spacing: 2px;
 }
 
 .testimonial-user {
     display: flex;
     align-items: center;
-    gap: 0.7rem;
-    margin-top: 1.2rem;
+    gap: 11px;
+    margin-top: 19px;
     position: relative;
     width: 100%;
 }
@@ -933,17 +938,17 @@ body {
 }
 
 .testimonial-name {
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: 700;
     color: #4b31ce;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 8px;
 }
 
 .testimonial-arrows-group {
     display: flex;
-    gap: 0.5rem;
+    gap: 8px;
     margin-left: auto;
 }
 
@@ -951,7 +956,7 @@ body {
     background: #ede9fe;
     border: none;
     color: #4b31ce;
-    font-size: 1.5rem;
+    font-size: 24px;
     border-radius: 50%;
     width: 36px;
     height: 36px;
@@ -1094,40 +1099,40 @@ body {
     }
     .testimonial-arrows-group {
         margin-left: 0;
-        margin-top: 0.7rem;
+        margin-top: 11px;
     }
 }
 
 @media (max-width: 600px) {
     .testimonial {
-        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        padding: 19px 8px 16px 8px;
         min-width: 0;
         max-width: 100%;
     }
     .container {
-        padding: 0 0.5rem;
+        padding: 0 8px;
     }
     .hero h1 {
-        font-size: 2rem;
+        font-size: 32px;
     }
     .hero p {
-        font-size: 1.1rem;
+        font-size: 18px;
     }
     .hero-form input[type="email"] {
-        font-size: 1rem;
-        padding: 0.8rem 1rem;
+        font-size: 16px;
+        padding: 13px 16px;
         padding-right: 120px;
     }
     .hero-form .btn.primary {
-        font-size: 1rem;
-        padding: 0 1.2rem;
+        font-size: 16px;
+        padding: 0 19px;
     }
     .features {
-        padding: 2rem 0;
+        padding: 32px 0;
     }
     .feature-item {
         width: 100%;
-        padding: 1.5rem;
+        padding: 24px;
     }
     .hero-image img {
         width: 100%;
@@ -1141,14 +1146,14 @@ body {
     .values h2,
     .pricing h2,
     .testimonials h2 {
-        font-size: 1.5rem;
+        font-size: 24px;
     }
     .quality p,
     .steps p,
     .values p,
     .pricing p,
     .testimonials p {
-        font-size: 1rem;
+        font-size: 16px;
     }
 }
 
@@ -1162,7 +1167,7 @@ body {
     }
     .feature-item {
         flex-direction: row;
-        padding: 1.2rem 1rem;
+        padding: 19px 16px;
     }
     .hero-flex,
     .quality-flex,
@@ -1172,7 +1177,7 @@ body {
     .testimonials-flex {
         flex-direction: column;
         text-align: center;
-        gap: 2rem;
+        gap: 32px;
     }
     .quality-content,
     .quality-image,
@@ -1189,7 +1194,7 @@ body {
     }
     .container {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 24px;
     }
     .hero-image img,
     .quality-image img,
@@ -1205,14 +1210,11 @@ body {
     }
     .pricing-grid {
         grid-template-columns: 1fr;
+        gap: 24px;
     }
-    .pricing-table {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    .values-lists {
-        flex-direction: column;
-        gap: 1.5rem;
+    .pricing-card {
+        min-width: 0;
+        width: 100%;
     }
 }
 
@@ -1317,6 +1319,7 @@ body {
         flex-direction: column;
         gap: 24px;
         align-items: flex-start;
+        width: 100%;
     }
     .footer-bottom {
         flex-direction: column;
