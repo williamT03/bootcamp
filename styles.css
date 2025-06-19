@@ -759,6 +759,7 @@ body {
     margin: 32px 0 0 0;
 }
 .pricing-card {
+    min-height: 480px;
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
@@ -780,16 +781,22 @@ body {
     align-items: flex-start; 
     gap: 32px; 
 }
+.pricing-card ul li:empty {
+    visibility: hidden;
+    height: 24px; /* Keeps spacing consistent */
+}
+
 .pricing-individual {
     border-top: 6px solid;
     border-image: linear-gradient(90deg, #22c55e 0%, #bbf7d0 100%);
     border-image-slice: 1;
     background: #fff;
+    padding-bottom: 50px;
 }
 .pricing-business {
     background: linear-gradient(135deg, #4b31ce 0%, #6c4cff 100%);
     color: #fff;
-    border-top: none;
+    border-top: 6px;
     box-shadow: 0 4px 24px rgba(75, 49, 206, 0.15);
 }
 .pricing-enterprise {
@@ -797,6 +804,7 @@ body {
     border-image: linear-gradient(90deg, #ef4444 0%, #fecaca 100%);
     border-image-slice: 1;
     background: #fff;
+    padding-bottom: 50px;
 }
 .pricing-card-header,
 .price-row,
