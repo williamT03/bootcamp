@@ -1,7 +1,5 @@
-/* Import Lato font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
-/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +24,8 @@ body {
 
 .container {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 20px;
     display: flex;
     align-items: center;
@@ -113,7 +113,6 @@ body {
     color: #fff;
 }
 
-/* Hamburger button styles */
 .navbar-hamburger {
     display: none;
     flex-direction: column;
@@ -772,6 +771,7 @@ body {
     position: relative;
     height: 100%;
     min-height: 420px;
+    text-align: center;
 }
 .pricing-individual {
     border-top: 6px solid;
@@ -806,6 +806,11 @@ body {
     border-bottom: none;
     margin-bottom: 32px;
     padding-bottom: 0;
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 32px 0;
+    text-align: center;
+    width: 100%;
 }
 .pricing-card .btn.buy-btn {
     margin-top: auto;
@@ -836,30 +841,15 @@ body {
     color: #4a5568;
     font-weight: 400;
 }
-.pricing-card ul {
-    list-style: none;
-    padding: 0;
-    margin: 24px 0 32px 0;
-    text-align: left;
-    width: 100%;
-}
 .pricing-card ul li {
     margin-bottom: 11px;
     color: #4a5568;
     font-size: 16px;
     padding-left: 19px;
     position: relative;
-}
-.pricing-card ul li:before {
-    content: "•";
-    color: #b5b5b5;
-    position: absolute;
-    left: 0;
-    font-size: 19px;
-    top: 0;
+    text-align: center;
 }
 
-/* Pricing Business Card Sectioning */
 .pricing-business .pricing-card-header,
 .pricing-business .price-row,
 .pricing-business ul,
@@ -901,7 +891,6 @@ body {
     border-color: #ede9fe;
 }
 
-/* Pricing Buttons */
 .btn.buy-btn {
     border-radius: 999px;
     font-weight: bold;
@@ -1128,7 +1117,6 @@ body {
     border-color: #fff;
 }
 
-/* Decorative blobs */
 .start-blob {
     position: absolute;
     z-index: 0;
@@ -1238,7 +1226,6 @@ body {
 }
 
 /* =========================
-   Responsive Design
    ========================= */
 @media (max-width: 900px) {
     .feature-grid {
