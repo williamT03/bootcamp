@@ -772,6 +772,13 @@ body {
     height: 100%;
     min-height: 420px;
     text-align: center;
+    margin: 0 16px; 
+}
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 32px; 
 }
 .pricing-individual {
     border-top: 6px solid;
